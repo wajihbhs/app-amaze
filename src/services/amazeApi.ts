@@ -1,7 +1,9 @@
+/* eslint-disable */
+
 import axios from "axios";
 
 const amazeApi = axios.create({
-    baseURL: process.env.VUE_APP_AMAZE_API,
+    baseURL: `https://api.tvmaze.com/`,
     headers: {
         "Content-Type": "application/json",
     },

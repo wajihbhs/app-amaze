@@ -1,4 +1,6 @@
-import {createI18n, useI18n} from 'vue-i18n';
+/* eslint-disable */
+
+import {createI18n} from 'vue-i18n';
 import {App} from 'vue';
 
 const messages = {

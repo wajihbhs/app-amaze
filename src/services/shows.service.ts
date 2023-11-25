@@ -1,7 +1,8 @@
+/* eslint-disable */
 import amazeApi from "@/services/amazeApi";
 import {Show} from "@/models/Show";
 
-const SHOWS_URL = '/shows?limit=10';
+const SHOWS_URL = '/shows';
 
 export class ShowsService {
     public static async getMovies(): Promise<Show[]> {
