@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: $default;
+  text-align: center;
+  background-color: $bg-primary;
+  color: $primary;
+  line-height: normal;
+
+  &:hover {
+    cursor: pointer;
+    color: black;
+  }
+}

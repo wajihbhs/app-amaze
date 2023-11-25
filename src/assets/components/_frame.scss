@@ -1,0 +1,14 @@
+$frame-color: #bababa;
+$frame-width: 1px;
+
+.frame {
+  border: $frame-width solid $frame-color;
+  margin: 1em;
+  padding: 20px;
+  width: 100%;
+
+  @include mobile {
+    width: inherit;
+    padding: 10px;
+  }
+}

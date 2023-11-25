@@ -1,0 +1,38 @@
+$small: 12px;
+$large: 14px;
+$medium: 18px;
+$default: 14px;
+
+.text-small {
+  font-size: 12px;
+}
+
+.text-medium {
+  font-size: 18px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.text-large {
+  font-size: 24px;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}
+
+.title {
+  font: normal normal $default normal;
+  color: $secondary;
+
+  &[custom-size = 'small'] {
+    @extend .text-small;
+  }
+  &[custom-size = 'medium'] {
+    @extend .text-medium;
+  }
+  &[custom-size = 'large'] {
+    @extend .text-large;
+  }
+}
