@@ -22,7 +22,6 @@ export function switchLanguage(lang: string) {
     // @ts-ignore
     i18n.global.locale = lang;
     console.log(lang, i18n.global.locale);
-    setupI18n({} as App);
 }
 
 // Plugin to install i18n instance

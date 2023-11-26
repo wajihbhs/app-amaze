@@ -26,8 +26,8 @@ import {switchLanguage} from "@/plugins/i18n";
 export default class NavBar extends Vue {
   @Prop(Array) readonly list!: string[];
 
-  onChange(li: string) :void {
-    switchLanguage(li);
+  onChange(li: string): void {
+    this.$i18n.locale = li;
   }
 }
 </script>
